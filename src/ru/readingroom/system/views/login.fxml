@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.readingroom.system.controllers.LoginController">
+   <children>
+      <AnchorPane fx:id="selectLoginTypePane" layoutX="-1.0" prefHeight="410.0" prefWidth="611.0" style="-fx-background-color: #3279cd;">
+         <children>
+            <Label layoutX="161.0" layoutY="42.0" text="Войти как" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="59.0" />
+               </font>
+            </Label>
+            <Button fx:id="enterAsAdminButton" cancelButton="true" layoutX="233.0" layoutY="167.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="205.0" style="-fx-background-radius: 30; -fx-background-color: #541e00;" text="Администратор" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Button>
+            <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="174.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/admin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="58.0" fitWidth="69.0" layoutX="161.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/librarian.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="enterAsLibrarianButton" cancelButton="true" layoutX="233.0" layoutY="239.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="205.0" style="-fx-background-radius: 30; -fx-background-color: #00540c;" text="Библиотекарь" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <AnchorPane fx:id="loginPane" focusTraversable="true" layoutX="-1.0" prefHeight="410.0" prefWidth="611.0" style="-fx-background-color: #3279cd;" visible="false">
+         <children>
+            <Label layoutX="231.0" layoutY="40.0" text="Вход" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="59.0" />
+               </font>
+            </Label>
+            <TextField fx:id="loginInput" layoutX="188.0" layoutY="154.0" prefHeight="30.0" prefWidth="230.0" promptText="Логин">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordInput" layoutX="188.0" layoutY="198.0" prefHeight="30.0" prefWidth="230.0" promptText="Пароль">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="188.0" layoutY="258.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="230.0" text="Войти">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" text="&lt;  Назад">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Label fx:id="userTypeLabel" alignment="CENTER" layoutX="188.0" layoutY="113.0" prefHeight="24.0" prefWidth="230.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

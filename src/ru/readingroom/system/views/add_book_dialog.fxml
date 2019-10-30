@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" prefHeight="431.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.readingroom.system.controllers.AdminAddController">
+   <children>
+      <Label layoutX="66.0" layoutY="26.0" text="Добавление книги">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookNameInput" focusTraversable="false" layoutX="28.0" layoutY="84.0" prefHeight="31.0" prefWidth="307.0" promptText="Название">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="bookAdd" focusTraversable="false" layoutX="249.0" layoutY="387.0" mnemonicParsing="false" text="Добавить">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="28.0" layoutY="211.0" prefHeight="162.0" prefWidth="307.0" style="-fx-border-style: solid; -fx-border-width: 1px; -fx-border-color: black; -fx-background-color: #eff0ff;">
+         <children>
+            <Label layoutX="103.0" layoutY="8.0" prefHeight="21.0" prefWidth="101.0" text="Поиск автора">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bookAuthorNameSearchInput" focusTraversable="false" layoutX="14.0" layoutY="33.0" prefHeight="29.0" prefWidth="206.0" promptText="Фамилия Имя Отчество">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Button fx:id="bookAuthorNameClearButton" focusTraversable="false" layoutX="225.0" layoutY="33.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="68.0" text="Очистить" />
+            <ListView fx:id="bookAuthorsList" focusTraversable="false" layoutX="14.0" layoutY="67.0" prefHeight="82.0" prefWidth="279.0">
+               <placeholder>
+                  <Label fx:id="bookAuthorsListPlaceholder" text="Список авторов">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </placeholder>
+            </ListView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="bookIsbnInput" focusTraversable="false" layoutX="28.0" layoutY="123.0" prefHeight="31.0" prefWidth="307.0" promptText="ISBN">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bookYearInput" focusTraversable="false" layoutX="28.0" layoutY="168.0" prefHeight="31.0" prefWidth="147.0" promptText="Год издания">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="bookQuantityInput" focusTraversable="false" layoutX="182.0" layoutY="168.0" prefHeight="31.0" prefWidth="153.0" promptText="Количество">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
